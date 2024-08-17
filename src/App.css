@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500..700&family=Vazirmatn:wght@500..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-vazir
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold uppercase font-vazir
+  }
+
+  .h1 {
+    @apply text-white text-7xl lg:text-8xl tracking-tighter
+  }
+
+  .h2 {
+    @apply text-3xl
+  }
+
+  .h3 {
+    @apply text-2xl
+  }
+
+  .h4 {
+    @apply text-xl
+  }
+
+  .h5 {
+    @apply text-lg
+  }
+
+  .active {
+    @apply text-accent
+  }
+
+  .navbar {
+    @apply cursor-pointer font-vazir font-bold hover:text-accent transition-all
+  }
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-accent
+}
