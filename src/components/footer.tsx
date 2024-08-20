@@ -12,13 +12,13 @@ import CustomButton from "./customButton";
 import { listContainerVariant, listItem } from "../utils/animation-utils";
 
 const Footer = () => (
-  <footer className="bg-primary-300 border-t-accent border py-24" id="contact">
+  <footer className="bg-primary-300 border-t border-accent py-24" id="contact">
     <div className="container mb-24 mx-auto">
       <motion.div
         variants={listContainerVariant}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12"
       >
         <motion.div variants={listItem} className="flex flex-col gap-4">
