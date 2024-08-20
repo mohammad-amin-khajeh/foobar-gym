@@ -116,20 +116,17 @@ const Footer = () => (
           <span>&copy; کپی رایت ۱۴۰۳ فوبار جیم</span>
           <ul className="flex text-3xl gap-x-4">
             <li>
-              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-              <a href="">
+              <a href="/">
                 <FaYoutube className="hover:text-accent hover:scale-125 transition-all duration-300" />
               </a>
             </li>
             <li>
-              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-              <a href="">
+              <a href="/">
                 <FaInstagram className="hover:text-accent transition-all hover:scale-125 duration-300" />
               </a>
             </li>
             <li>
-              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-              <a href="">
+              <a href="/">
                 <FaTelegram className="hover:text-accent transition-all hover:scale-125 duration-300" />
               </a>
             </li>
