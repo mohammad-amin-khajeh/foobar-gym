@@ -91,7 +91,7 @@ const Footer = () => (
 
         <motion.div variants={listItem}>
           <h4 className="h4 mb-4 text-center text-accent">خبرنامه</h4>
-          <div className="flex flex-col items-center gap-4 text-center">
+          <div className="flex flex-col items-center lg:gap-20 gap-8 text-center">
             <p>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است.
@@ -101,7 +101,7 @@ const Footer = () => (
               <input
                 type="text"
                 placeholder="ایمیلتون رو وارد کنید"
-                className="px-7 py-3 outline-none text-primary-300"
+                className="px-2 py-3 outline-none text-primary-300"
               />
             </form>
           </div>
