@@ -33,8 +33,8 @@ const MembershipSlider = () => (
 
           <div>
             <ul>
-              {plan.benefits.map((benefit) => (
-                <li key={plan.title} className="flex m-6 items-center gap-2">
+              {plan.benefits.map((benefit, index) => (
+                <li key={index} className="flex m-6 items-center gap-2">
                   <benefit.icon className="text-accent text-lg" />
                   {benefit.text}
                 </li>
