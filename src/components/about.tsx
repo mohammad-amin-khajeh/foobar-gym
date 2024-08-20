@@ -1,47 +1,7 @@
 import { motion } from "framer-motion";
-import { FaUsers } from "react-icons/fa";
-import { FaDumbbell } from "react-icons/fa6";
-import { FaNoteSticky } from "react-icons/fa6";
-import { IoIosPricetags } from "react-icons/io";
 import { fadeIn } from "../utils/animation-utils";
 import Achievements from "./achievements";
-
-type Feature = {
-  id: number;
-  icon: any;
-  title: string;
-  description: string;
-};
-
-const features: Feature[] = [
-  {
-    id: 0,
-    icon: FaUsers,
-    title: "فضای دوستانه و صمیمی",
-    description:
-      "سوال پرسیدن عیب نیست که! مربی های ما همیشه آماده کمک کردن و راهنمایی هستن.",
-  },
-  {
-    id: 1,
-    icon: IoIosPricetags,
-    title: "قیمت های منطقی و منصفانه",
-    description: "ما طرفدار سلامت هستیم نه پول!",
-  },
-  {
-    id: 2,
-    icon: FaDumbbell,
-    title: "تجهیزات روز دنیا",
-    description:
-      "همه دستگاه های ما از برند تکنوجیم هستن که درحال حاضر برند یک دنیاست و معیار سنجش برند های دیگست!",
-  },
-  {
-    id: 3,
-    icon: FaNoteSticky,
-    title: "منتورینگ تخصصی",
-    description:
-      "مربی های ما پیشرفت شما رو با دقت دنبال میکنن، چون اونا هم ی روزی مثل شما بودن:)",
-  },
-];
+import { features } from "../utils/about-data";
 
 const About = () => {
   return (
@@ -81,7 +41,7 @@ const About = () => {
               <div className="flex text-4xl bg-primary-300 text-white rounded-full size-16 lg:size-20 justify-center items-center mx-auto mb-4">
                 <feature.icon />
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex max-md:text-center flex-col items-center">
                 <h4 className="h4 text-accent">{feature.title}</h4>
                 <p className="text-center">{feature.description}</p>
               </div>

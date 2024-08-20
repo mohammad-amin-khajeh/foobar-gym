@@ -3,7 +3,7 @@ import { fadeIn } from "../utils/animation-utils";
 import CustomButton from "./customButton";
 
 const HeroSlider = () => (
-  <div className="flex py-36 gap-10 flex-col items-center lg:max-w-[600px]">
+  <div className="flex md:py-36 py-[5vh] gap-10 flex-col items-center lg:max-w-[600px]">
     <motion.h1
       variants={fadeIn("up", 0.2)}
       initial="hidden"

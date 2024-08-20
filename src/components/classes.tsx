@@ -14,7 +14,7 @@ const Classes = () => (
             alt={theClass.name}
             className="brightness-[0.5] object-cover w-full h-[300px] lg:h-[485px]"
           />
-          <div className="absolute max-w-sm flex flex-col justify-center items-center m-auto inset-0 text-center">
+          <div className="absolute container max-w-md flex flex-col justify-center items-center m-auto inset-0 text-center">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"

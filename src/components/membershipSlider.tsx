@@ -24,8 +24,8 @@ const MembershipSlider = () => (
     }}
     className="min-h-[680px]"
   >
-    {plans.map((plan, index) => (
-      <SwiperSlide key={index}>
+    {plans.map((plan) => (
+      <SwiperSlide key={plan.title} className="max-md:container">
         <div className=" border border-accent hover:bg-primary-300/80 mt-10 bg-primary-300/40 transition-all duration-300 w-full max-w-sm xl:max-w-none mx-auto">
           <div className="border-b py-5 px-16 border-accent">
             <h2 className="h2 text-center">{plan.title}</h2>
@@ -33,8 +33,8 @@ const MembershipSlider = () => (
 
           <div>
             <ul>
-              {plan.benefits.map((benefit, index) => (
-                <li key={index} className="flex m-6 items-center gap-2">
+              {plan.benefits.map((benefit) => (
+                <li key={plan.title} className="flex m-6 items-center gap-2">
                   <benefit.icon className="text-accent text-lg" />
                   {benefit.text}
                 </li>
